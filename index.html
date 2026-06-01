@@ -9,8 +9,8 @@
 body{
     margin:0;
     font-family:'Segoe UI', sans-serif;
-    overflow:hidden;
     background: radial-gradient(circle at top,#ffe4f2,#f3e7ff,#fff0f7);
+    overflow-x:hidden;
 }
 
 /* INTRO */
@@ -25,23 +25,24 @@ body{
     flex-direction:column;
     z-index:10;
     color:white;
+    text-align:center;
+    padding:20px;
 }
 
 button{
     padding:14px 30px;
     border:none;
     border-radius:30px;
-    font-size:18px;
+    font-size:16px;
     background:white;
     color:#ff2e93;
     font-weight:bold;
-    cursor:pointer;
 }
 
 /* WATERMARK */
 .watermark{
     position:fixed;
-    font-size:100px;
+    font-size:90px;
     color:rgba(255,105,180,0.06);
     transform:rotate(-25deg);
     top:25%;
@@ -52,48 +53,49 @@ button{
 .container{
     display:none;
     text-align:center;
-    padding:30px;
+    padding:15px;
 }
 
 /* CARD */
 .card{
-    max-width:650px;
+    max-width:95%;
     margin:auto;
-    background:rgba(255,255,255,0.75);
-    border-radius:25px;
-    padding:25px;
-    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    background:rgba(255,255,255,0.8);
+    border-radius:20px;
+    padding:18px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
 
 /* TITLE */
 h1{
     color:#ff2e93;
+    font-size:22px;
 }
 
-/* CAKE IMAGE */
+/* TEXT */
+p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* CAKE */
 .cake{
-    width:220px;
-    margin:30px auto;
-    animation:float 2s infinite ease-in-out;
+    width:170px;
+    margin:20px auto;
 }
 
 .cake img{
     width:100%;
-    border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
-}
-
-@keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* BALLOONS */
 .balloon{
     position:absolute;
     bottom:-120px;
-    width:35px;
-    height:45px;
+    width:30px;
+    height:40px;
     border-radius:50%;
     animation:floatUp linear infinite;
 }
@@ -106,14 +108,20 @@ h1{
 /* CONFETTI */
 .confetti{
     position:fixed;
-    width:8px;
-    height:8px;
+    width:6px;
+    height:6px;
     top:-10px;
     animation:fall linear infinite;
 }
 
 @keyframes fall{
     to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    h1{font-size:20px;}
+    p{font-size:13px;}
 }
 </style>
 </head>
@@ -133,7 +141,6 @@ h1{
 
 <h1>Happy Birthday Minahil 🎂</h1>
 
-<!-- 🎂 CAKE IMAGE (CHANGE HERE IF YOU WANT) -->
 <div class="cake">
     <img src="cake.jpg" alt="Minahil">
 </div>
@@ -144,18 +151,18 @@ Allah tumhe hamesha khush rakhe, tumhare naseeb roshan kare, har dua jo tumhare 
 </p>
 
 <p>
-  Mana k tm skillfull ho 😂 but honor someone's ego and self-worth the way they honor yours.
+Mana k tm skillfull ho 😂 but honor someone's ego and self-worth the way they honor yours.
 </p>
 
 <p>
- Happy landing day motiiiii. 🎂
+Happy landing day motiiiii. 🎂
 </p>
 
 <p>
- Distance may be measured in kilometers, but good people always stay close to the heart.<br>
-        I hope this year brings you happiness, success, peace, and countless reasons to smile.<br>
-        Stay blessed and keep shining. ✨ <br>
-        <b>-Haseeb-</b>
+Distance may be measured in kilometers, but good people always stay close to the heart.<br>
+I hope this year brings you happiness, success, peace, and countless reasons to smile.<br>
+Stay blessed and keep shining. ✨ <br>
+<b>-Haseeb-</b>
 </p>
 
 </div>
